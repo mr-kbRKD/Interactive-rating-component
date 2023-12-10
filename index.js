@@ -3,6 +3,8 @@ const thankyouContainer = document.querySelector(".thank-you");
 
 const submitButton = document.getElementById("submit");
 const rateAgainButton = document.getElementById("rate-again");
+const rating = document.getElementById("rating");
+const rates = document.querySelectorAll(".btn");
 
 submitButton.addEventListener("click", ()=>{
     thankyouContainer.classList.remove("hidden");
@@ -15,4 +17,12 @@ submitButton.addEventListener("click", ()=>{
 rateAgainButton.addEventListener("click", () =>{
     thankyouContainer.classList.add("hidden")
     mainContainer.style.display = "block";
+    rating.innerHTML = `"Bhai kuch toh select kro"`;
+})
+
+rates.forEach((rate) =>{
+    rate.addEventListener("click", ()=>{
+        // console.log(rate.innerHTML);
+        rating.innerHTML = rate.innerHTML;
+    })
 })
