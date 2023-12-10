@@ -84,7 +84,7 @@
     padding-top: .2rem;
     color: hsl(217, 12%, 63%);
     background-color: hsl(213, 19%, 23%);
-    font-weight: 400;
+    /* font-weight: 400; */
     /* margin-bottom: 2rem; */
     cursor: pointer;
     transition: .3s;
@@ -129,16 +129,17 @@
     margin: 0rem auto 2rem;
   }
 
+  
   /* .gray{ */
     .thank-you p.gray{
       color: hsl(25, 97%, 53%);
       font-size: 0.9rem;
-    background-color: hsl(213, 19%, 23%);
-    border: none;
-    border-radius: 30px;
-    padding: 0.2rem 0.5rem 0rem;
-    margin-bottom: 2rem;
-  }
+      background-color: hsl(213, 19%, 23%);
+      border: none;
+      border-radius: 30px;
+      padding: 0.2rem 0.5rem 0rem;
+      margin-bottom: 2rem;
+    }
 
   .thank-you h2{
     color: #fff;
@@ -147,8 +148,13 @@
   .thank-you p{
     color: hsl(217, 12%, 63%);
     margin-bottom: 2rem;
-
   }
+  
+  .hidden{
+    display: none;
+  }
+
+
   .attribution { 
     font-size: 14px; 
     color: #fff;
